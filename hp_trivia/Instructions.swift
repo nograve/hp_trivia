@@ -12,9 +12,10 @@ struct Instructions: View {
     
     var body: some View {
         ZStack {
-          InfoBackgroundImage()
+            InfoBackgroundImage()
             
             VStack {
+                // Title image
                 Image("appiconwithradius")
                     .resizable()
                     .scaledToFit()
@@ -22,10 +23,12 @@ struct Instructions: View {
                     .padding(.top)
                 
                 ScrollView {
+                    // Title
                     Text("How To Play")
                         .font(.largeTitle)
                         .padding()
                     
+                    // Instructions
                     VStack(alignment: .leading) {
                         Text("Welcome to HP Trivia! In this game, you will be asked random questions from the HP books and you must guess the right answer or you will lose points!😱")
                             .padding([.horizontal, .bottom])
@@ -45,6 +48,7 @@ struct Instructions: View {
                 }
                 .foregroundColor(.black)
                 
+                // Done button
                 Button("Done") {
                     dismiss()
                 }

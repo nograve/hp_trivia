@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var scalePlayButton = false
     @State private var moveBackgroundImage = false
     @State private var showInstructions = false
+    @State private var showSettings = false
     
     var body: some View {
         GeometryReader { geo in
@@ -104,12 +105,15 @@ struct ContentView: View {
                         
                         // Settings button
                         Button {
-                            
+                            showSettings.toggle()
                         } label: {
                             Image(systemName: "gearshape.fill")
                                 .font(.largeTitle)
                                 .foregroundColor(.white)
                                 .shadow(radius: 5)
+                        }
+                        .sheet(isPresented: $showSettings) {
+                            Settings()
                         }
                         
                         Spacer()

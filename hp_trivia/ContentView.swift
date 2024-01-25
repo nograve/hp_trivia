@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var audioPlayer: AVAudioPlayer!
     @State private var scalePlayButton = false
     @State private var moveBackgroundImage = false
+    @State private var showInstructions = false
     
     var body: some View {
         GeometryReader { geo in
@@ -68,13 +69,15 @@ struct ContentView: View {
                         
                         // Info button
                         Button {
-                            
+                            showInstructions.toggle()
                         } label: {
                             Image(systemName: "info.circle.fill")
                                 .font(.largeTitle)
                                 .foregroundColor(.white)
                                 .shadow(radius: 5)
-                        }
+                        }.sheet(isPresented: $showInstructions, content: {
+                            Instructions()
+                        })
                         
                         Spacer()
                         

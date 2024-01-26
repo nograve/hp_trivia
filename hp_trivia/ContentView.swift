@@ -14,6 +14,7 @@ struct ContentView: View {
     @State private var moveBackgroundImage = false
     @State private var showInstructions = false
     @State private var showSettings = false
+    @State private var playGame = false
     
     var body: some View {
         GeometryReader { geo in
@@ -84,7 +85,7 @@ struct ContentView: View {
                         
                         // Play button
                         Button {
-                            
+                            playGame.toggle()
                         } label: {
                             Text("Play")
                                 .font(.largeTitle)
@@ -99,6 +100,9 @@ struct ContentView: View {
                             withAnimation(.easeInOut(duration: 1.3).repeatForever()) {
                                 scalePlayButton.toggle()
                             }
+                        }
+                        .fullScreenCover(isPresented: $playGame) {
+                            Gameplay()
                         }
                         
                         Spacer()

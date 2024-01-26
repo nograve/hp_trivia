@@ -26,6 +26,7 @@
 		E888C7AC2B6278C4009EB90A /* magic-in-the-air.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E888C7A42B6278C4009EB90A /* magic-in-the-air.mp3 */; };
 		E888C7AD2B6278C4009EB90A /* spellcraft.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E888C7A52B6278C4009EB90A /* spellcraft.mp3 */; };
 		E888C7AF2B627A20009EB90A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E888C7AE2B627A20009EB90A /* Constants.swift */; };
+		E89779492B63C92000538A96 /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89779482B63C92000538A96 /* Gameplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		E888C7A42B6278C4009EB90A /* magic-in-the-air.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "magic-in-the-air.mp3"; path = "../../../../Downloads/HPResources/Audio/magic-in-the-air.mp3"; sourceTree = "<group>"; };
 		E888C7A52B6278C4009EB90A /* spellcraft.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = spellcraft.mp3; path = ../../../../Downloads/HPResources/Audio/spellcraft.mp3; sourceTree = "<group>"; };
 		E888C7AE2B627A20009EB90A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E89779482B63C92000538A96 /* Gameplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			children = (
 				E888C7722B6274B0009EB90A /* hp_triviaApp.swift */,
 				E888C7742B6274B0009EB90A /* ContentView.swift */,
+				E89779482B63C92000538A96 /* Gameplay.swift */,
 				E828B3512B6292260056FA35 /* Instructions.swift */,
 				E828B3532B6299AA0056FA35 /* Settings.swift */,
 				E888C7AE2B627A20009EB90A /* Constants.swift */,
@@ -303,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E888C7752B6274B0009EB90A /* ContentView.swift in Sources */,
+				E89779492B63C92000538A96 /* Gameplay.swift in Sources */,
 				E888C7732B6274B0009EB90A /* hp_triviaApp.swift in Sources */,
 				E828B3522B6292260056FA35 /* Instructions.swift in Sources */,
 				E888C7AF2B627A20009EB90A /* Constants.swift in Sources */,
